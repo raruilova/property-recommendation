@@ -57,38 +57,3 @@ npm run dev
 # o
 yarn dev
 ```
-
-property-recommendation/
-├── .next/ # Carpeta generada por Next.js (caché, build)
-├── node_modules/ # Dependencias del proyecto
-├── public/ # Archivos estáticos (imágenes, favicon)
-├── src/
-│ ├── app/ # Rutas de la aplicación (App Router)
-│ │ ├── (header)/ # Grupo de rutas para páginas principales
-│ │ │ ├── favorites/ # Página de favoritos
-│ │ │ │ └── page.tsx
-│ │ │ ├── properties/ # Páginas de detalle de propiedades
-│ │ │ │ └── [id]/
-│ │ │ │ └── page.tsx
-│ │ │ └── layout.tsx # Layout principal del grupo (aquí se envuelve el FavoritesProvider)
-│ │ ├── page.tsx # Página principal (Home)
-│ │ ├── favicon.ico
-│ │ └── globals.css # Estilos globales
-│ ├── components/ # Componentes de UI reutilizables
-│ │ ├── Footer.tsx
-│ │ ├── Header.tsx
-│ │ └── PropertyCard.tsx # Tarjeta individual de propiedad
-│ ├── hooks/ # Hooks personalizados (si los hay, ej. useFavorites ahora consume Contexto)
-│ │ └── useFavorites.ts # Ahora este hook consume FavoritesContext
-│ ├── models/ # Definiciones de modelos de datos (ej. Property.ts)
-│ ├── services/ # Lógica para interactuar con APIs o datos (ej. propertyService)
-│ │ ├── propertyService.ts
-│ │ └── recommendationService.ts
-├── .gitignore # Archivos y carpetas a ignorar por Git
-├── next-env.d.ts # Declaraciones de entorno de Next.js
-├── next.config.js # Configuración de Next.js
-├── package.json # Dependencias y scripts del proyecto
-├── package-lock.json # Bloqueo de versiones de dependencias (si usas npm)
-├── postcss.config.js # Configuración de PostCSS (para Tailwind CSS, etc.)
-├── README.md # Este archivo
-└── tsconfig.json # Configuración de TypeScript
