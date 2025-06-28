@@ -9,11 +9,11 @@ export const recommendationService = {
         continue;
       }
       const sameCity = prop.ciudad === currentProperty.ciudad;
-      const simeType = prop.tipo === currentProperty.tipo;
+      const sameType = prop.tipo === currentProperty.tipo;
       const minPrice = currentProperty.precio * (1 - PRICE_TOLERANCE_PERCENT);
       const maxPrice = currentProperty.precio * (1 + PRICE_TOLERANCE_PERCENT);
       const priceInRange = prop.precio >= minPrice && prop.precio <= maxPrice;
-      if (sameCity && sameCity && priceInRange) {
+      if (sameCity && sameType && priceInRange) {
         similarProperties.push(prop);
       }
       if (similarProperties.length >= 2) {
