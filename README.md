@@ -18,7 +18,7 @@ Este proyecto es una aplicación web para la gestión y visualización de propie
 - **Next.js 15**: Framework de React para aplicaciones web con SSR/SSG/ISR.
 - **React**: Biblioteca de JavaScript para construir interfaces de usuario.
 - **TypeScript**: Superset de JavaScript que añade tipado estático.
-- **Tailwind CSS** (asumiendo su uso por las clases de utilidad comunes) para estilizado.
+- **Tailwind CSS**  Estilos.
 - **`localStorage`**: Para la persistencia de datos del lado del cliente (favoritos).
 
 ## 🛠️ Configuración y Ejecución Local
@@ -37,7 +37,7 @@ Asegúrate de tener instalado:
 1.  **Clona el repositorio:**
 
     ```bash
-    git clone <URL_DE_TU_REPOSITORIO>
+    git clone https://github.com/raruilova/property-recommendation
     cd property-recommendation
     ```
 
